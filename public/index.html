@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎂 Birthday Reminder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">🎉 Birthday Reminder App</h1>
+
+    <div class="card">
+      <h2>Register Your Birthday</h2>
+
+      <form id="birthdayForm">
+        <label for="username">👤 Username</label>
+        <input type="text" id="username" placeholder="Enter username" required />
+
+        <label for="email">📧 Email</label>
+        <input type="email" id="email" placeholder="Enter email" required />
+
+        <label for="dob">🎂 Date of Birth</label>
+        <input type="date" id="dob" required />
+
+        <button type="submit" id="submitBtn">Submit</button>
+      </form>
+
+      <div id="spinner" class="spinner hidden"></div>
+      <p id="message" class="message"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
